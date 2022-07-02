@@ -1,0 +1,20 @@
+<%= form_with(model: @transaction, url: category_payments_path(@category.id), method: 'post') do |f|  %>
+<div>
+  <%= f.label :name  %>
+  <%= f.text_field :name, required:true %>
+</div>
+
+<div>
+  <%= f.label :amount  %>
+  <%= f.number_field :amount, required:true %>
+</div>
+
+<div>
+  <%= f.label :categories %>
+  <%= f.collection_check_boxes(:category_ids, current_user.categories, :id, :name, {include_hidden: false}, { prompt: true } ) %>
+</div>
+
+<div>
+    <%= f.submit 'Create' %>
+</div>
+<%end%>

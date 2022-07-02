@@ -1,0 +1,15 @@
+<%= form_with model:@category, method: :post do |f|  %>
+<div>
+  <%= f.label :name  %>
+  <%= f.text_field :name, required:true %>
+</div>
+
+<div>
+  <%= f.label :icon  %>
+  <%= f.file_field :icon, required:true %>
+</div>
+
+<div>
+    <%= f.submit 'Create' %>
+</div>
+<%end%>

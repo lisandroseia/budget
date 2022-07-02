@@ -1,0 +1,6 @@
+<%= link_to category_payments_path(category_id: category.id) do %>
+<h2>
+  <%= category.name%>
+</h2>
+  <image src="<%= url_for(category.icon)%>", class="category-icon">
+<%end%>
