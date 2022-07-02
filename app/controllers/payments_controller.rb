@@ -3,7 +3,7 @@
 class PaymentsController < ApplicationController
   def index
     @category = Category.find(params[:category_id])
-    @transactions = @category.payments
+    @transactions = @category.payments.order(created_at: :desc)
   end
 
   def new

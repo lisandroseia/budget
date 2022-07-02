@@ -2,14 +2,8 @@
 
 class CategoriesController < ApplicationController
   def index
-    @categories = Category.all
+    @categories = current_user.categories
   end
-
-  # def show
-  #   @category = Category.find(params[:id])
-  #   @transactions = @category.transactions.order(created_at: :desc)
-  #   @total = @category.transactions.where(category_id: @category.id).sum(:amount)
-  # end
 
   def new
     @category = Category.new

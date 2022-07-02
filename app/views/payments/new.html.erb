@@ -1,3 +1,6 @@
+<%=link_to "back", category_payments_path(category_id: params[:category_id]) %>
+
+
 <%= form_with(model: @transaction, url: category_payments_path(@category.id), method: 'post') do |f|  %>
 <div>
   <%= f.label :name  %>

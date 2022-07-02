@@ -1,4 +1,9 @@
+<section>
 <%=link_to "Add transaction", new_category_payment_path(category_id: params[:category_id]) %>
+<p>
+  total spent: $<%= @category.total %>
+</p>
+<ul>
 <%= render partial: 'renders/transaction', collection: @transactions %>
-
-<%= @category.total %>
+</ul>
+</section>

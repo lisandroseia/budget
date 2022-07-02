@@ -1,1 +1,9 @@
-<%= transaction.name %>
+<li>
+    <div>
+        <h2><%= transaction.name %></h2>
+       <p> <%= transaction.created_at.strftime("%B %d, %Y") %></p>
+    </div>
+    <p>$
+  <%= transaction.amount %>
+    </p>
+</li>
