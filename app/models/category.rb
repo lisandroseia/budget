@@ -10,6 +10,6 @@ class Category < ActiveRecord::Base
 
 
   def total
-    payments.sum(:amount)
+    payments.sum(:amount) || 0
   end
 end
