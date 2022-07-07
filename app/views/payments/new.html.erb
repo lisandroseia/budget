@@ -1,23 +1,27 @@
-<%=link_to "back", category_payments_path(category_id: params[:category_id]) %>
-
+<section class="category-new">
+<div class="section-head negative">
+<%=link_to category_payments_path(category_id: params[:category_id]) do %>
+  <%= fa_icon "chevron-left" %>
+<%end%>
+<h2>NEW TRANSACTION</h2>
+</div>
 
 <%= form_with(model: @transaction, url: category_payments_path(@category.id), method: 'post') do |f|  %>
 <div>
-  <%= f.label :name  %>
-  <%= f.text_field :name, required:true %>
+  <%= f.text_field :name, required:true, placeholder:'Name', class:'new-name' %>
 </div>
 
 <div>
-  <%= f.label :amount  %>
-  <%= f.number_field :amount, required:true %>
+  <%= f.number_field :amount, required:true, placeholder:'Amount', class:'new-name' %>
 </div>
 
-<div>
-  <%= f.label :categories %>
+<div class="new-cat">
+  <%= f.label :categories, value:'Categories: ', class:'new-label' %>
   <%= f.collection_check_boxes(:category_ids, current_user.categories, :id, :name, {include_hidden: false}, { prompt: true } ) %>
 </div>
 
 <div>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Create', class:"submit-btn" %>
 </div>
 <%end%>
+</section>

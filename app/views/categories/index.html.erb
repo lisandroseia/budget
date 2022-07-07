@@ -1,4 +1,10 @@
-<%=link_to "Add category", new_category_path %>
+<div class="section-head">
+<%=link_to new_category_path do%>
+  <%= fa_icon "plus-square-o", text: "New" %>
+<%end%>
+<h2>CATEGORIES</h2>
+  <%= link_to("Log out", destroy_user_session_path, method: :delete, class:'right-icon', data: { turbo_method: :delete }) %>
+</div>
 <ul>
 <%= render partial: 'renders/category', collection: @categories %>
 </ul>

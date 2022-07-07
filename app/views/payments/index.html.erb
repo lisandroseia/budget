@@ -1,7 +1,16 @@
 <section>
-<%=link_to "Add transaction", new_category_payment_path(category_id: params[:category_id]) %>
-<p>
-  total spent: $<%= @category.total %>
+<div class="section-head">
+<%=link_to categories_path do %>
+  <%= fa_icon "chevron-left", text: "categories" %>
+<%end%>
+<h2>TRANSACTIONS</h2>
+<%=link_to new_category_payment_path(category_id: params[:category_id]),class:'right-icon' do %>
+  <%= fa_icon "money", text: "new" %>
+<%end%>
+</div>
+
+<p class="trans-price price">
+  <span>total spent:</span> $<%= @category.total %>
 </p>
 <ul>
 <%= render partial: 'renders/transaction', collection: @transactions %>

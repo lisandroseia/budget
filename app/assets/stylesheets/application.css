@@ -12,9 +12,69 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
- .category-icon{
-    width: 125px;
-    aspect-ratio: 1;
+ @font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('ProximaNova-Light.ttf') ;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('ProximaNova-Bold.ttf') ;
+}
+
+
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Proxima Nova Light";
+  font-weight: lighter;
+  color: #434b54b7;
  }
+
+ body{
+  background-color: #434b5410;
+ }
+
+ li{
+   list-style: none;
+ }
+
+ a{
+   text-decoration: none;
+ }
+
+ h1, h2{
+  font-family: "Proxima Nova Bold";
+ }
+
+ h2, i{
+  color: #fff;
+ }
+
+ .price{
+  color: #000;
+ }
+
+h1{
+    color: #000;
+}
+
+
+/* flash messages */
+
+.flash-box{
+  background-color: #3778c2;
+}
+
+/* logins */
+
+.log-opts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
