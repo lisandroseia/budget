@@ -12,9 +12,4 @@ RSpec.describe User, type: :model do
     subject.email = nil
     expect(subject).to_not be_valid
   end
-
-  it 'name length should be bigger than 4' do
-    subject.name = 'hi'
-    expect(subject).to_not be_valid
-  end
 end
