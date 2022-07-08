@@ -15,8 +15,8 @@ RSpec.describe '/categories', type: :request do
     end
   end
 
-   it 'renders a successful response' do
-     get new_category_url
-     expect(response).to be_successful
-   end
+  it 'renders a successful response' do
+    get new_category_url
+    expect(response).to be_successful
+  end
 end

@@ -20,6 +20,6 @@ RSpec.describe Category, type: :model do
   end
 
   it 'total should be 0' do
-    expect(subject.total).to eql(0)
+    expect(subject.total).to be(0)
   end
 end
