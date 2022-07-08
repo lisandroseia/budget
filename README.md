@@ -1,24 +1,56 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# BG-TRACK
 
-Things you may want to cover:
+BG-TRACK is an aplication that allows the user to keep track and organize all their payments, allowing them to know how much they spent on each category they created.
 
-* Ruby version
+# live-demo
 
-* System dependencies
+[live demo](https://bg-track.herokuapp.com/)
 
-* Configuration
+## Installation & Usage
 
-* Database creation
+To get a local copy follow these simple example steps. 
+- Make sure you have `Postgres` and `Ruby` installed. 
+- Run git clone https://github.com/lisandroseia/budget.git 
+- run `bundle install` 
+- run `rails db:create` to create the database.
+- run `rails db:migrate` to create the the dchema. 
+- run `rails s` to start the application on local server. 
+- To test the project, run `bundle exec rspec` in your terminal 
 
-* Database initialization
+## Technologies
 
-* How to run the test suite
+- Ruby
+- Rails 
+- Postgres 
+- heroku
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Authors
 
-* ...
+👤 **Lisandro Seia**
+
+- GitHub: [https://github.com/lisandroseia](https://github.com/lisandroseia)
+- LinkedIn: [https://www.linkedin.com/in/lisandro-seia-295120225/](https://www.linkedin.com/in/lisandro-seia-295120225/)
+- Twitter: [https://twitter.com/LisandroSeia](https://twitter.com/LisandroSeia)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Behnam1369/Catalog_of_my_things/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
