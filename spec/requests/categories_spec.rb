@@ -4,7 +4,6 @@ RSpec.describe '/categories', type: :request do
   let(:user) { create(:user) }
   let(:category) { create(:category) }
   before(:each) do
-    user.confirmed_at = Time.now
     sign_in user
   end
 

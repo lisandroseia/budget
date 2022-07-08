@@ -37,7 +37,7 @@ class PaymentsController < ApplicationController
 
   def create_op(categories, payment_id)
     categories.each do |cat|
-      @operation = Operation.new(category_id: cat.to_i, payment_id:)
+      @operation = Operation.new(category_id: cat.to_i, payment_id: payment_id)
       @operation.save
     end
   end
