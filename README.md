@@ -1,62 +1,45 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# BG-TRACK
 
-> Description the project.
+BG-TRACK is an aplication that allows the user to keep track and organize all their payments, allowing them to know how much they spent on each category they created.
 
+# live-demo
 
-## Built With
+[live demo](https://bg-track.herokuapp.com/)
 
-- Major languages
-- Frameworks
-- Technologies used
+## Installation & Usage
 
-## Live Demo (if available)
+To get a local copy follow these simple example steps. 
+- Make sure you have `Postgres` and `Ruby` installed. 
+- Run git clone https://github.com/lisandroseia/budget.git 
+- run `bundle install` 
+- run `rails db:create` to create the database.
+- run `rails db:migrate` to create the the dchema. 
+- run `rails s` to start the application on local server. 
+- To test the project, run `bundle exec rspec` in your terminal 
 
-[Live Demo Link](https://livedemo.com)
+## Technologies
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+- Ruby
+- Rails 
+- Postgres 
+- heroku
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Lisandro Seia**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [https://github.com/lisandroseia](https://github.com/lisandroseia)
+- LinkedIn: [https://www.linkedin.com/in/lisandro-seia-295120225/](https://www.linkedin.com/in/lisandro-seia-295120225/)
+- Twitter: [https://twitter.com/LisandroSeia](https://twitter.com/LisandroSeia)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Behnam1369/Catalog_of_my_things/issues).
 
 ## Show your support
 
@@ -70,4 +53,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.

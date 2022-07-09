@@ -1,0 +1,28 @@
+<section class="category-new">
+<div class="section-head">
+<%=link_to authenticated_root_path do%>
+  <%= fa_icon "chevron-left", text: "home" %>
+<%end%>
+<h2>ADD CATEGORY</h2>
+</div>
+
+<%= form_with model:@category, method: :post do |f|  %>
+
+<label class="upload new-box">
+  <%= fa_icon "user-circle-o", class:'upload-icon' %>
+    Upload picture
+    <span style="display:none;">
+  <%= f.file_field :icon, required:true, accept: 'image/png,image/gif,image/jpeg' %>
+    </span>
+  </label>
+
+<div>
+  <%= f.text_field :name, required:true, placeholder: 'Name', class:'new-name' %>
+</div>
+
+
+<div class="field">
+    <%= f.submit 'Create', class:"submit-btn" %>
+</div>
+<%end%>
+</section>

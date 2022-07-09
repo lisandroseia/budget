@@ -1,0 +1,10 @@
+<li class="category-li">
+<%= link_to category_payments_path(category_id: category.id) do %>
+  <image src="<%= url_for(category.icon)%>", class="category-icon">
+  <div class="category-details">
+  <h3><%= category.name%></h3>
+  <p class="date"> <%= category.created_at.strftime("%B %d, %Y") %></p>
+  </div>
+      <p class="price">$<%= category.total %></p>
+<%end%>
+</li>

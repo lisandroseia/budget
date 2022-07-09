@@ -1,0 +1,7 @@
+<li class="category-li transaction-li">
+    <div class="category-details">
+        <h2 class="trans-name"><%= transaction.name %></h2>
+       <p class="date"> <%= transaction.created_at.strftime("%B %d, %Y") %></p>
+    </div>
+    <p class="price">$<%= transaction.amount %></p>
+</li>

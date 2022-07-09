@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ */
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('ProximaNova-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('ProximaNova-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Proxima Nova Light", sans-serif;
+  font-weight: lighter;
+  color: #434b54b7;
+}
+
+body {
+  background-color: #434b5410;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Proxima Nova Bold", sans-serif;
+}
+
+h2,
+i {
+  color: #fff;
+}
+
+.price {
+  color: #000;
+}
+
+h1 {
+  color: #000;
+}
+
+/* flash messages */
+
+.flash-box {
+  background-color: #3778c2;
+}
+
+/* logins */
+
+.log-opts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
